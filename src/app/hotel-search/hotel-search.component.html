@@ -1,0 +1,19 @@
+<div class="container w-50 border p-2">
+    <form #hotelSearchForm (ngSubmit)="searchHotel()">
+        <div class="mb-3">
+          <label for="id1" class="form-label">City</label>
+          <input type="email" class="form-control" id="id1" name="cityName" [(ngModel)]="hotelSearch.city">
+        </div>
+        <div class="mb-3">
+          <label for="id2" class="form-label">Check In</label>
+          <input type="date" class="form-control" id="id2" name="checkIn" [(ngModel)]="hotelSearch.checkIn">
+        </div>
+        <div class="mb-3">
+            <label for="id3" class="form-label">Check Out</label>
+            <input type="date" class="form-control" id="id3" name="checkOut" [(ngModel)]="hotelSearch.checkOut">
+          </div>
+       
+        <button type="submit" class="btn btn-primary" >Submit</button>
+        <!-- <button type="button" class="btn btn-primary" [routerLink]="['/hotels/hotel-list']" [queryParams]="{city:hotelSearch.city,checkIn:hotelSearch.checkIn,checkOut:hotelSearch.checkOut}">Submit</button> -->
+      </form>
+</div>

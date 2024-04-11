@@ -1,0 +1,22 @@
+<div class="container w-50 border p-2">
+    <form [formGroup]="searchForm" (ngSubmit)="search()">
+        <div class="mb-3">
+            <label for="id1" class="form-label">From</label>
+            <input type="text" class="form-control" id="id1" formControlName="from">
+        </div>
+        <div class="mb-3">
+            <label for="id2" class="form-label">To</label>
+            <input type="text" class="form-control" id="id2" formControlName="to">
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        
+    </form>
+   
+</div>
+<button type="button" class="btn btn-primary ms-2" (click)="setUserDe()">Set user deatils</button>
+
+
